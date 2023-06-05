@@ -1,4 +1,4 @@
-package hashmap
+package hashmap.first
 
 class HashMapFirstRealization(size: Int) {
     private val array = Array<String?>(size) { null }
