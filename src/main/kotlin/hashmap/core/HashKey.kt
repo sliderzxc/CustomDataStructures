@@ -1,4 +1,4 @@
-package hashmap.second
+package hashmap.core
 
 class HashKey<T>(private val value: T) {
     override fun hashCode(): Int {

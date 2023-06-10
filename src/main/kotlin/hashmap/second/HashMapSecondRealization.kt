@@ -1,5 +1,7 @@
 package hashmap.second
 
+import hashmap.core.HashKey
+
 class HashMapSecondRealization {
     private val values = Array<String?>(16) { null }
     private val keys = Array<Int?>(16) { null }
@@ -17,14 +19,6 @@ class HashMapSecondRealization {
         if (getArrayHashIndexByHashCode(hashCode) >= values.size) return null
 
         return values[getArrayHashIndexByHashCode(hashCode)]
-    }
-
-    fun getAll(): Array<String?> {
-        return values
-    }
-
-    fun getAllKeys(): Array<Int?> {
-        return keys
     }
 
     private fun getArrayHashIndexByHashCode(hashCode: Int): Int {
